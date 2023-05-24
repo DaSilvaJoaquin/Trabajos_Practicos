@@ -14,17 +14,17 @@ print(romano_to_decimal(numero))
 
 
 #Ejercicio 22
-cantidad_objetos_sacados=0
-mochila1=['arroz ','pan' ,'sable de luz' ]
+cantidad_objetos_sacados= 0
+mochila1=['arroz ','pan' ,'Sable de luz' ]
 def usar_la_fuerza(mochila,pos):
     
     if len(mochila)==0:
         return 'No hay mas objetos en la mochila'
     else :
         if mochila[0]=='Sable de luz' :
-                     return print('El sable de luz se encontro en ', pos= pos+1)
+                     return print('El sable de luz se encontro en ',pos+1)
         else:                    
-            return usar_la_fuerza(mochila.pop(0),pos= pos+1)
+            return usar_la_fuerza(mochila[:1],pos+1)
 
 print(usar_la_fuerza(mochila1,cantidad_objetos_sacados))        
 
